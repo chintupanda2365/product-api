@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="79e9e7c1-7e39-46af-a364-3dde3fd8d85c" >
 		<http:listener-connection host="0.0.0.0" port="8082" />
 	</http:listener-config>
-	<flow name="nexus-repo-demoFlow" doc:id="5e84f51e-ebd0-42b3-beb1-b64a7769e956" >
+	<flow name="nexus-repo-demoFlow1" doc:id="5e84f51e-ebd0-42b3-beb1-b64a7769e956" >
 		<http:listener doc:name="Listener" doc:id="fb08c195-26f6-4020-8bdd-d534395dc3c6" config-ref="HTTP_Listener_config" path="test"/>
 		<logger level="INFO" doc:name="Logger" doc:id="8b29b90f-ffdc-4ca1-863b-cb45ec0edc0a" message="test"/>
 	</flow>
